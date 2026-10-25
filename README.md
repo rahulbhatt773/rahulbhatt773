@@ -21,7 +21,6 @@
 
 <p align="center">
   <a href="#about-me">About</a> ·
-  <a href="#delivery-map">Delivery Map</a> ·
   <a href="#technology-stack">Technology Stack</a> ·
   <a href="#portfolio-projects">Projects</a> ·
   <a href="#devsecops-approach">DevSecOps</a> ·
@@ -36,74 +35,6 @@
 I’m a **DevOps & DevSecOps Engineer** with four years of experience across cloud infrastructure, automation, and CI/CD. I work primarily with **Microsoft Azure and Terraform**, building practical infrastructure examples around networking, secure cloud resources, and Kubernetes.
 
 I care about keeping infrastructure changes understandable, automating repeatable checks, and considering security and operations throughout delivery. I’m also exploring **Agentic AI** and **Cloud FinOps** as areas of interest.
-
-## 🧭 Portfolio Delivery Map
-
-An enterprise-oriented reference flow showing how my key skills fit together, from a reviewed infrastructure change to secure platform operations. This is an architecture view, not a claim that the portfolio labs deploy these systems: their workflows validate and scan Terraform; they **do not deploy cloud resources**.
-
-```mermaid
-flowchart TB
-    subgraph GOV["01 · Governance and platform foundation"]
-        direction LR
-        OWN["Teams and workload requirements"]
-        CLOUD["Azure · AWS · GCP"]
-        IAC["Terraform modules<br/>Ansible automation"]
-        OWN --> CLOUD --> IAC
-    end
-
-    subgraph DELIVERY["02 · Secure change and delivery"]
-        direction LR
-        PR["Git pull request"]
-        PIPE["GitHub Actions<br/>Azure Pipelines"]
-        CHECKS["Quality and security checks<br/>fmt · validate · TFLint<br/>Gitleaks · tfsec · Checkov"]
-        APPROVE["Review and approval"]
-        PR --> PIPE --> CHECKS --> APPROVE
-    end
-
-    subgraph PLATFORM["03 · Cloud and Kubernetes platform"]
-        direction LR
-        FOUNDATION["Cloud foundation<br/>network · identity · policy"]
-        CONTAINERS["Docker images"]
-        K8S["Kubernetes / AKS"]
-        GITOPS["Argo CD<br/>GitOps reconciliation"]
-        FOUNDATION --> K8S
-        CONTAINERS --> K8S
-        GITOPS --> K8S
-    end
-
-    subgraph OPERATE["04 · Operate, secure, and optimize"]
-        direction LR
-        OBS["Azure Monitor<br/>Prometheus · Grafana"]
-        SECURE["DevSecOps controls<br/>Key Vault · least privilege"]
-        FINOPS["Cloud FinOps<br/>cost visibility · right-sizing"]
-        FEEDBACK["Operational feedback"]
-        K8S --> OBS
-        K8S --> SECURE
-        CLOUD --> FINOPS
-        OBS --> FEEDBACK
-        SECURE --> FEEDBACK
-        FINOPS --> FEEDBACK
-    end
-
-    IAC --> PR
-    APPROVE --> FOUNDATION
-    APPROVE --> GITOPS
-    FEEDBACK -. "inform future changes" .-> OWN
-
-    AI["Agentic AI exploration<br/>assistive suggestions · human review"]
-    AI -. "optional, human-approved input" .-> PR
-
-    classDef governance fill:#10243A,stroke:#58A6FF,color:#FFFFFF
-    classDef delivery fill:#172554,stroke:#818CF8,color:#FFFFFF
-    classDef platform fill:#123524,stroke:#34D399,color:#FFFFFF
-    classDef operations fill:#2A1B3D,stroke:#C084FC,color:#FFFFFF
-    classDef ai fill:#3A2A12,stroke:#FBBF24,color:#FFFFFF
-    class OWN,CLOUD,IAC governance
-    class PR,PIPE,CHECKS,APPROVE delivery
-    class FOUNDATION,CONTAINERS,K8S,GITOPS platform
-    class OBS,SECURE,FINOPS,FEEDBACK operations
-    class AI ai
-```
 
 ## 🧰 Technology Stack
 
