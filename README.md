@@ -125,7 +125,11 @@ I aim to make security checks part of the normal development workflow, with resu
 </p>
 
 <p align="center">
-  <img src="https://ghchart.rshah.org/58A6FF/rahulbhatt773" alt="GitHub contribution calendar" width="95%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rahulbhatt773/rahulbhatt773/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rahulbhatt773/rahulbhatt773/output/github-contribution-grid-snake.svg" />
+    <img alt="Animated snake game traversing the GitHub contribution calendar" src="https://raw.githubusercontent.com/rahulbhatt773/rahulbhatt773/output/github-contribution-grid-snake.svg" width="95%" />
+  </picture>
 </p>
 
 ## 🤝 Connect
