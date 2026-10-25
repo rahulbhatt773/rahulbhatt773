@@ -194,7 +194,7 @@ I aim to make security checks part of the normal development workflow, with resu
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=rahulbhatt773&bg_color=0D1117&color=58A6FF&line=58A6FF&point=FFFFFF&area=true&hide_border=true" alt="GitHub contribution activity graph" width="95%" />
+  <img src="https://ghchart.rshah.org/58A6FF/rahulbhatt773" alt="GitHub contribution calendar" width="95%" />
 </p>
 
 ## 🤝 Connect
